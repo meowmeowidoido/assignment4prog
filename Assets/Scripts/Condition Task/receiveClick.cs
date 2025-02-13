@@ -35,7 +35,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		
 
 
-			if( Input.GetMouseButton(0) && GameObject.FindWithTag("Bamboo"))
+			if( Input.GetMouseButton(0))
 			{
 				Debug.Log("CLICKED!");
                 return true;

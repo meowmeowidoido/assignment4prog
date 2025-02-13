@@ -221,11 +221,11 @@ Transform:
   m_GameObject: {fileID: 121798788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4629216, y: 0.7291672, z: -0.0122}
-  m_LocalScale: {x: 0.057879765, y: 3.661522, z: 0.007880976}
+  m_LocalPosition: {x: -20.27, y: 3.089167, z: -12.402037}
+  m_LocalScale: {x: 2.093952, y: 3.661522, z: 0.4121699}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1104893254}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &125418131
 GameObject:
@@ -239,6 +239,8 @@ GameObject:
   - component: {fileID: 125418134}
   - component: {fileID: 125418133}
   - component: {fileID: 125418132}
+  - component: {fileID: 125418137}
+  - component: {fileID: 125418136}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Bamboo
@@ -328,12 +330,57 @@ Transform:
   m_GameObject: {fileID: 125418131}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.31628948, y: 1.2871673, z: -0.39208934}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.28133386, y: 1.2871673, z: -0.2815835}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125418136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125418131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &125418137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125418131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 125418136}
 --- !u!1 &149699216
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +393,8 @@ GameObject:
   - component: {fileID: 149699219}
   - component: {fileID: 149699218}
   - component: {fileID: 149699217}
+  - component: {fileID: 149699222}
+  - component: {fileID: 149699221}
   m_Layer: 0
   m_Name: Cylinder (10)
   m_TagString: Bamboo
@@ -435,12 +484,57 @@ Transform:
   m_GameObject: {fileID: 149699216}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.21263425, y: 1.2871673, z: -0.35346553}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.109229155, y: 1.2871673, z: -0.11855084}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149699221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149699216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &149699222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149699216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 149699221}
 --- !u!1 &430545388
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +547,8 @@ GameObject:
   - component: {fileID: 430545391}
   - component: {fileID: 430545390}
   - component: {fileID: 430545389}
+  - component: {fileID: 430545394}
+  - component: {fileID: 430545393}
   m_Layer: 0
   m_Name: Cylinder (18)
   m_TagString: Bamboo
@@ -542,12 +638,57 @@ Transform:
   m_GameObject: {fileID: 430545388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16011557, y: 0.89716744, z: -0.38788277}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.022029387, y: 0.89716744, z: -0.26991948}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430545393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430545388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &430545394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430545388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 430545393}
 --- !u!1 &580071269
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +701,8 @@ GameObject:
   - component: {fileID: 580071272}
   - component: {fileID: 580071271}
   - component: {fileID: 580071270}
+  - component: {fileID: 580071275}
+  - component: {fileID: 580071274}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Bamboo
@@ -649,12 +792,57 @@ Transform:
   m_GameObject: {fileID: 580071269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27538022, y: 1.2871673, z: -0.389591}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.21340987, y: 1.2871673, z: -0.2746562}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580071274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580071269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &580071275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580071269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 580071274}
 --- !u!1 &687657252
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +855,8 @@ GameObject:
   - component: {fileID: 687657255}
   - component: {fileID: 687657254}
   - component: {fileID: 687657253}
+  - component: {fileID: 687657258}
+  - component: {fileID: 687657257}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Bamboo
@@ -756,12 +946,57 @@ Transform:
   m_GameObject: {fileID: 687657252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35802802, y: 1.2871673, z: -0.39266294}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.35063475, y: 1.2871673, z: -0.2831742}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &687657257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687657252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &687657258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687657252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 687657257}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,11 +1190,11 @@ Transform:
   m_GameObject: {fileID: 815528007}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.6936175, z: -0, w: 0.72034353}
-  m_LocalPosition: {x: -0.4868314, y: 0.7291672, z: 0.021873789}
-  m_LocalScale: {x: 0.08699644, y: 6.080412, z: 0.011385708}
+  m_LocalPosition: {x: -21.135, y: 3.089167, z: -10.62}
+  m_LocalScale: {x: 4.547855, y: 6.080412, z: 0.41217}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1104893254}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -87.834, z: 0}
 --- !u!1 &887650202
 GameObject:
@@ -973,6 +1208,8 @@ GameObject:
   - component: {fileID: 887650205}
   - component: {fileID: 887650204}
   - component: {fileID: 887650203}
+  - component: {fileID: 887650208}
+  - component: {fileID: 887650207}
   m_Layer: 0
   m_Name: Cylinder (15)
   m_TagString: Bamboo
@@ -1062,12 +1299,57 @@ Transform:
   m_GameObject: {fileID: 887650202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3046801, y: 0.89716744, z: -0.42784503}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.26205817, y: 0.89716744, z: -0.38072878}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887650207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887650202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &887650208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887650202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 887650207}
 --- !u!1 &922347827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1362,8 @@ GameObject:
   - component: {fileID: 922347830}
   - component: {fileID: 922347829}
   - component: {fileID: 922347828}
+  - component: {fileID: 922347833}
+  - component: {fileID: 922347832}
   m_Layer: 0
   m_Name: Cylinder (11)
   m_TagString: Bamboo
@@ -1169,12 +1453,57 @@ Transform:
   m_GameObject: {fileID: 922347827}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23447095, y: 0.89716744, z: -0.4064299}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.1454859, y: 0.89716744, z: -0.32134777}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &922347832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922347827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &922347833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922347827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 922347832}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,13 +1589,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9137374, z: -0, w: 0.40630522}
-  m_LocalPosition: {x: 13.57, y: 7.04, z: -22.15}
+  m_LocalRotation: {x: -0.23703869, y: 0.6763055, z: -0.24556898, w: -0.65277827}
+  m_LocalPosition: {x: 6.9614773, y: 15.446681, z: -11.149185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -132.054, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -174.828, z: 0}
 --- !u!1 &969406972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1608,8 @@ GameObject:
   - component: {fileID: 969406975}
   - component: {fileID: 969406974}
   - component: {fileID: 969406973}
+  - component: {fileID: 969406978}
+  - component: {fileID: 969406977}
   m_Layer: 0
   m_Name: Cylinder (17)
   m_TagString: Bamboo
@@ -1368,12 +1699,57 @@ Transform:
   m_GameObject: {fileID: 969406972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1999192, y: 0.89716744, z: -0.42784503}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.08811764, y: 0.89716744, z: -0.38072878}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969406977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969406972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &969406978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969406972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 969406977}
 --- !u!1 &1081078610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,6 +1762,8 @@ GameObject:
   - component: {fileID: 1081078613}
   - component: {fileID: 1081078612}
   - component: {fileID: 1081078611}
+  - component: {fileID: 1081078616}
+  - component: {fileID: 1081078615}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Bamboo
@@ -1475,12 +1853,57 @@ Transform:
   m_GameObject: {fileID: 1081078610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.40778252, y: 1.2871673, z: -0.35748085}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.433245, y: 1.2871673, z: -0.1856196}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1081078615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081078610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1081078616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081078610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1081078615}
 --- !u!1 &1096421925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1916,8 @@ GameObject:
   - component: {fileID: 1096421928}
   - component: {fileID: 1096421927}
   - component: {fileID: 1096421926}
+  - component: {fileID: 1096421931}
+  - component: {fileID: 1096421930}
   m_Layer: 0
   m_Name: Cylinder (12)
   m_TagString: Bamboo
@@ -1582,12 +2007,57 @@ Transform:
   m_GameObject: {fileID: 1096421925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24055204, y: 0.89716744, z: -0.35881934}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.15558267, y: 0.89716744, z: -0.189331}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1096421930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1096421931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1096421930}
 --- !u!1 &1101874705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +2070,8 @@ GameObject:
   - component: {fileID: 1101874708}
   - component: {fileID: 1101874707}
   - component: {fileID: 1101874706}
+  - component: {fileID: 1101874711}
+  - component: {fileID: 1101874710}
   m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Bamboo
@@ -1689,12 +2161,57 @@ Transform:
   m_GameObject: {fileID: 1101874705}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35802802, y: 1.2871673, z: -0.35384795}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.35063475, y: 1.2871673, z: -0.1755461}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1101874710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101874705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1101874711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101874705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1101874710}
 --- !u!1 &1104893250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,14 +2312,10 @@ Transform:
   m_GameObject: {fileID: 1104893250}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5226, y: 3.1528327, z: -11.763985}
-  m_LocalScale: {x: 36.177616, y: 1, z: 52.299343}
+  m_LocalPosition: {x: -11, y: 2.36, z: -11.763985}
+  m_LocalScale: {x: 21.789055, y: 1, z: 18.861235}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 121798792}
-  - {fileID: 1256181217}
-  - {fileID: 1896627362}
-  - {fileID: 815528011}
   - {fileID: 1752478858}
   - {fileID: 580071273}
   - {fileID: 1651795042}
@@ -1867,6 +2380,8 @@ GameObject:
   - component: {fileID: 1229074092}
   - component: {fileID: 1229074091}
   - component: {fileID: 1229074090}
+  - component: {fileID: 1229074095}
+  - component: {fileID: 1229074094}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Bamboo
@@ -1956,12 +2471,57 @@ Transform:
   m_GameObject: {fileID: 1229074089}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27538022, y: 1.2871673, z: -0.389591}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.21340987, y: 1.2871673, z: -0.2746562}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229074094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229074089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1229074095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229074089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1229074094}
 --- !u!1 &1256181213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,11 +2621,11 @@ Transform:
   m_GameObject: {fileID: 1256181213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4629216, y: 0.7291672, z: 0.07}
-  m_LocalScale: {x: 0.057879765, y: 3.8362699, z: 0.007880976}
+  m_LocalPosition: {x: -20.27, y: 3.089167, z: -8.103031}
+  m_LocalScale: {x: 2.093952, y: 3.8362699, z: 0.4121699}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1104893254}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362430528
 GameObject:
@@ -2079,6 +2639,8 @@ GameObject:
   - component: {fileID: 1362430531}
   - component: {fileID: 1362430530}
   - component: {fileID: 1362430529}
+  - component: {fileID: 1362430534}
+  - component: {fileID: 1362430533}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Bamboo
@@ -2168,12 +2730,57 @@ Transform:
   m_GameObject: {fileID: 1362430528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.40778252, y: 1.2871673, z: -0.39266294}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.433245, y: 1.2871673, z: -0.2831742}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362430533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362430528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1362430534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362430528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1362430533}
 --- !u!1 &1506802887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,6 +2793,8 @@ GameObject:
   - component: {fileID: 1506802890}
   - component: {fileID: 1506802889}
   - component: {fileID: 1506802888}
+  - component: {fileID: 1506802893}
+  - component: {fileID: 1506802892}
   m_Layer: 0
   m_Name: Cylinder (16)
   m_TagString: Bamboo
@@ -2275,11 +2884,87 @@ Transform:
   m_GameObject: {fileID: 1506802887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25686046, y: 0.89716744, z: -0.42784503}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.18266049, y: 0.89716744, z: -0.38072878}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506802892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506802887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1506802893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506802887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1506802892}
+--- !u!1 &1614461557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614461558}
+  m_Layer: 0
+  m_Name: Point of interest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614461558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614461557}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.94, y: 3.68, z: 5.428308}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1633418770
 GameObject:
@@ -2293,6 +2978,8 @@ GameObject:
   - component: {fileID: 1633418773}
   - component: {fileID: 1633418772}
   - component: {fileID: 1633418771}
+  - component: {fileID: 1633418776}
+  - component: {fileID: 1633418775}
   m_Layer: 0
   m_Name: Cylinder (14)
   m_TagString: Bamboo
@@ -2382,12 +3069,57 @@ Transform:
   m_GameObject: {fileID: 1633418770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35111767, y: 0.89716744, z: -0.42784503}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.33916113, y: 0.89716744, z: -0.38072878}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633418775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633418770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1633418776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633418770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1633418775}
 --- !u!1 &1651795038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +3132,8 @@ GameObject:
   - component: {fileID: 1651795041}
   - component: {fileID: 1651795040}
   - component: {fileID: 1651795039}
+  - component: {fileID: 1651795044}
+  - component: {fileID: 1651795043}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Bamboo
@@ -2489,12 +3223,57 @@ Transform:
   m_GameObject: {fileID: 1651795038}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.27538022, y: 1.2871673, z: -0.35423037}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.21340987, y: 1.2871673, z: -0.17660649}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651795043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651795038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1651795044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651795038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1651795043}
 --- !u!1 &1742070748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +3286,8 @@ GameObject:
   - component: {fileID: 1742070751}
   - component: {fileID: 1742070750}
   - component: {fileID: 1742070749}
+  - component: {fileID: 1742070754}
+  - component: {fileID: 1742070753}
   m_Layer: 0
   m_Name: Cylinder (13)
   m_TagString: Bamboo
@@ -2596,12 +3377,57 @@ Transform:
   m_GameObject: {fileID: 1742070748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.40999386, y: 0.89716744, z: -0.42784503}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.43691662, y: 0.89716744, z: -0.38072878}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742070753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742070748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1742070754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742070748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1742070753}
 --- !u!1 &1752478854
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,6 +3440,8 @@ GameObject:
   - component: {fileID: 1752478857}
   - component: {fileID: 1752478856}
   - component: {fileID: 1752478855}
+  - component: {fileID: 1752478860}
+  - component: {fileID: 1752478859}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Bamboo
@@ -2703,12 +3531,57 @@ Transform:
   m_GameObject: {fileID: 1752478854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19484101, y: 1.2871673, z: -0.389591}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.07968603, y: 1.2871673, z: -0.2746562}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752478859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752478854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1752478860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752478854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 1752478859}
 --- !u!1 &1896627358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,11 +3681,11 @@ Transform:
   m_GameObject: {fileID: 1896627358}
   serializedVersion: 2
   m_LocalRotation: {x: 0.703981, y: 0.010738761, z: -0.010646862, w: 0.71005785}
-  m_LocalPosition: {x: -0.46282956, y: 3.726, z: 0.0287}
-  m_LocalScale: {x: 0.057856183, y: 0.09560471, z: 0.4106143}
+  m_LocalPosition: {x: -20.26667, y: 6.086, z: -10.262994}
+  m_LocalScale: {x: 2.093952, y: 4.9982934, z: 0.41216996}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1104893254}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 89.508, y: 1.733, z: 0}
 --- !u!1001 &2043882531
 PrefabInstance:
@@ -2824,7 +3697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.846952
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2832,7 +3705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.188465
+      value: -10.009518
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2885,6 +3758,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2043882536}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2043882539}
   m_SourcePrefab: {fileID: 100100000, guid: 2caf46f609ef8ab46a53db10888e5dc4, type: 3}
 --- !u!1 &2043882532 stripped
 GameObject:
@@ -2951,10 +3827,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8962879
-  m_Height: 1.7925758
+  m_Radius: 0.5
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.12486267}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2043882536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,16 +3860,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":345.0,"y":230.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_value":1},"speed":{"_value":2.0},"stopDistance":{"_value":0.1},"waitActionFinish":true,"$type":"NodeCanvas.Tasks.Actions.MoveTowards"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Moving","_position":{"x":647.0,"y":124.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Climb","_position":{"x":998.0,"y":198.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_conditionList":{"conditions":[{"$type":"NodeCanvas.Tasks.Conditions.receiveClick"}]},"_actionList":{"executionMode":1,"actions":[]},"_position":{"x":182.0,"y":358.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"},{"_nestedFSM":{},"_position":{"x":812.0,"y":427.0},"$type":"NodeCanvas.StateMachines.NestedFSMState"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"eat","_position":{"x":559.0,"y":460.0},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.receiveClick"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":345.0,"y":230.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"agent":1,"distance":{},"target":{"_value":2},"panda":3,"$type":"NodeCanvas.Tasks.Actions.MoveAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Moving","_position":{"x":739.7986,"y":146.4397},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"eat","_position":{"x":559.0,"y":460.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"","_position":{"x":998.0,"y":198.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[{"$type":"NodeCanvas.Tasks.Conditions.receiveClick"}]},"_actionList":{"executionMode":1,"actions":[]},"_position":{"x":182.0,"y":358.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"},{"_nestedFSM":{"_value":4},"_position":{"x":812.0,"y":427.0},"$type":"NodeCanvas.StateMachines.NestedFSMState"}],"connections":[{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.receiveClick"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.eatCondition"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[{"name":"...","rect":{"xMin":660.5176,"yMin":602.1285,"xMax":713.4919,"yMax":751.1187}}],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
-  - {fileID: 1651795038}
+  - {fileID: 2043882534}
+  - {fileID: 1614461557}
+  - {fileID: 2043882536}
+  - {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
   _boundGraphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
-    _zoomFactor: 1
+    _translation: {x: -222, y: -36}
+    _zoomFactor: 0.973129
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -3002,6 +3881,27 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 2043882536}
+--- !u!65 &2043882539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043882532}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2248201, y: 1, z: 2.12259}
+  m_Center: {x: 0.11241007, y: 0, z: 0.014143467}
 --- !u!1 &2120730645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,6 +3914,8 @@ GameObject:
   - component: {fileID: 2120730648}
   - component: {fileID: 2120730647}
   - component: {fileID: 2120730646}
+  - component: {fileID: 2120730651}
+  - component: {fileID: 2120730650}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Bamboo
@@ -3103,12 +4005,57 @@ Transform:
   m_GameObject: {fileID: 2120730645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.31628948, y: 1.2871673, z: -0.35384795}
-  m_LocalScale: {x: 0.007221821, y: 4.0991, z: 0.0049865157}
+  m_LocalPosition: {x: 0.28133386, y: 1.2871673, z: -0.1755461}
+  m_LocalScale: {x: 0.011990803, y: 4.0991, z: 0.013826852}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1104893254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120730650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120730645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &2120730651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120730645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 11400000, guid: 2a765d3ca7e809d4499468bdc7f18905, type: 2}
+  _blackboard: {fileID: 2120730650}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3117,3 +4064,8 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1104893254}
   - {fileID: 2043882531}
+  - {fileID: 1614461558}
+  - {fileID: 121798792}
+  - {fileID: 1256181217}
+  - {fileID: 1896627362}
+  - {fileID: 815528011}
