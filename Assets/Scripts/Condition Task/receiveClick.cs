@@ -10,7 +10,8 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class receiveClick : ConditionTask {
 	 
 	
-		public bool clicked; 
+		public bool clicked;
+        public BBParameter<float> pandaEnergy;
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit(){
@@ -19,12 +20,12 @@ namespace NodeCanvas.Tasks.Conditions {
 
 		//Called whenever the condition gets enabled.
 		protected override void OnEnable() {
-        
-            
+
+
         }
 
-		//Called whenever the condition gets disabled.
-		protected override void OnDisable() {
+        //Called whenever the condition gets disabled.
+        protected override void OnDisable() {
 			
 		}
 
@@ -38,18 +39,13 @@ namespace NodeCanvas.Tasks.Conditions {
 			if( Input.GetMouseButton(0))
 			{
 				Debug.Log("CLICKED!");
+
                 return true;
             }
             return false;
 			
         }
 
-        private void OnMouseDown()
-		{
-			
-				Debug.Log("yas");
-				clicked = true;
-			
-		}	
+      
 	}
 }

@@ -7,12 +7,15 @@ using UnityEngine.AI;
 namespace NodeCanvas.Tasks.Conditions {
 
 	public class eatCondition : ConditionTask {
-		NavMeshAgent agent;
-		public float distance; 
+		public NavMeshAgent agent;
+		public float distanceWidth=4;
+		public BBParameter<float> pandaEnergy;
+		float distance; 
+
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit(){
-
+			pandaEnergy = new BBParameter<float>();
             agent = agent.GetComponent<NavMeshAgent>();
             return null;
 		}
@@ -34,8 +37,8 @@ namespace NodeCanvas.Tasks.Conditions {
 			GameObject currentBamboo;
 			currentBamboo = GameObject.FindGameObjectWithTag("Bamboo");
             distance = Vector3.Distance(agent.transform.position, currentBamboo.transform.position);
-            Debug.Log(distance);
-            if (distance <2)
+           // Debug.Log(distance);
+            if (distance <distanceWidth && pandaEnergy.value < 50)
 			{
 				agent.SetDestination(currentBamboo.transform.position);
                 return true;
