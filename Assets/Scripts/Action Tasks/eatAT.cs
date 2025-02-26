@@ -1,4 +1,5 @@
 using NodeCanvas.Framework;
+using NodeCanvas.Tasks.Conditions;
 using ParadoxNotion.Design;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,42 +13,30 @@ namespace NodeCanvas.Tasks.Actions
     {
         public BBParameter<GameObject> closestBamboo; // Store result in Blackboard
         public BBParameter<NavMeshAgent> agent;
-        //Use for initialization. This is called only once in the lifetime of the task.
-        //Return null if init was successfull. Return an error string otherwise
+        private Blackboard pandaBB; // Reference to the Blackboard
+
         protected override string OnInit()
-        {
+        {  // Get the Blackboard from the agent
+                pandaBB = agent.value.GetComponent<Blackboard>();
+
+                    // Retrieve "nearestBamboo" from Blackboard
+                    closestBamboo = pandaBB.GetVariableValue<GameObject>("nearestBamboo");
+
+
             return null;
         }
 
-        //This is called once each time the task is enabled.
-        //Call EndAction() to mark the action as finished, either in success or failure.
-        //EndAction can be called from anywhere.
         protected override void OnExecute()
         {
-            GameObject[] allBamboo = GameObject.FindGameObjectsWithTag("Bamboo");
-
-            GameObject currentBamboo;
-            currentBamboo = GameObject.FindGameObjectWithTag("Bamboo");
-            GameObject.Destroy(currentBamboo);
-            EndAction(true);
-            GameObject nearestBamboo = null;
-            float shortestDistance = Mathf.Infinity;
-            Vector3 agentPosition = agent.value.transform.position;
-
-            foreach (GameObject bamboo in allBamboo)
+            if (closestBamboo == null || closestBamboo.value == null)
             {
-                float distance = Vector3.Distance(agentPosition, bamboo.transform.position);
-                if (distance < shortestDistance)
-                {
-                    shortestDistance = distance;
-                    nearestBamboo = bamboo;
-                }
+                Debug.LogWarning("No valid bamboo found in Blackboard! Cannot destroy.");
+                EndAction(false);
+                return;
             }
 
-            // Store the closest Bamboo in the Blackboard
-            closestBamboo.value = nearestBamboo;
-            Debug.Log("Closest Bamboo found at: " + nearestBamboo.transform.position);
-
+            Debug.Log("Destroying bamboo: " + closestBamboo.value.name);
+            GameObject.Destroy(closestBamboo.value);
             EndAction(true);
         }
     }

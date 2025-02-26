@@ -1,50 +1,73 @@
 using NodeCanvas.Framework;
+using NodeCanvas.Tasks.Actions;
 using ParadoxNotion.Design;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 
-namespace NodeCanvas.Tasks.Conditions {
+namespace NodeCanvas.Tasks.Conditions
+{
 
-	public class eatCondition : ConditionTask {
-		public NavMeshAgent agent;
-		public float distanceWidth=4;
-		public BBParameter<float> pandaEnergy;
-		float distance; 
+    public class eatCondition : ConditionTask
+    {
+        public NavMeshAgent agent;
+        public float distanceWidth = 4;
+        Blackboard pandaBB;
+        public BBParameter<float> pandaEnergy;
+        public BBParameter<GameObject> nearestBamboo;
+        float distance;
 
-		//Use for initialization. This is called only once in the lifetime of the task.
-		//Return null if init was successfull. Return an error string otherwise
-		protected override string OnInit(){
-			pandaEnergy = new BBParameter<float>();
+        //Use for initialization. This is called only once in the lifetime of the task.
+        //Return null if init was successfull. Return an error string otherwise
+        protected override string OnInit()
+        {
+            pandaBB = agent.GetComponent<Blackboard>();
+            
+
+
+            pandaEnergy = new BBParameter<float>();
             agent = agent.GetComponent<NavMeshAgent>();
             return null;
-		}
+        }
 
-		//Called whenever the condition gets enabled.
-		protected override void OnEnable() {
-			
-		}
+     
+        protected override bool OnCheck()
+        {
+            // Find all bamboo objects
+            GameObject[] allBamboo = GameObject.FindGameObjectsWithTag("Bamboo");
 
-		//Called whenever the condition gets disabled.
-		protected override void OnDisable() {
-			
-		}
+            if (allBamboo.Length == 0)
+            {
+                return false; // No bamboo, condition fails
+            }
 
-		//Called once per frame while the condition is active.
-		//Return whether the condition is success or failure.
-		protected override bool OnCheck() {
+            // Find the closest bamboo
+            nearestBamboo.value = null;
+            float shortestDistance = Mathf.Infinity;
+            Vector3 agentPosition = agent.transform.position;
 
-			GameObject currentBamboo;
-			currentBamboo = GameObject.FindGameObjectWithTag("Bamboo");
-            distance = Vector3.Distance(agent.transform.position, currentBamboo.transform.position);
-           // Debug.Log(distance);
-            if (distance <distanceWidth && pandaEnergy.value < 50)
-			{
-				agent.SetDestination(currentBamboo.transform.position);
+            foreach (GameObject bamboo in allBamboo)
+            {
+                float distanceToBamboo = Vector3.Distance(agentPosition, bamboo.transform.position);
+                if (distanceToBamboo < shortestDistance)
+                {
+                    shortestDistance = distanceToBamboo;
+                    nearestBamboo.value = bamboo; 
+                }
+            }
+
+
+            // Store the closest bamboo's distance
+            distance = shortestDistance;
+
+            if (distance < distanceWidth)
+            {
+                agent.SetDestination(nearestBamboo.value.transform.position);
                 return true;
             }
 
-			return false;
-		}
-	}
+            return false;
+        }
+    }
 }
