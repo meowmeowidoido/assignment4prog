@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: Bamboo
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{},"cloneRotation":{},"saveCloneAs":{"_name":""},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"valueA":{"_name":""},"valueB":{"_value":{"r":0.3153299,"g":1.0}},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[UnityEngine.Color,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":465.1288,"y":625.255},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{"bambooTransform":{"_name":"bambooTransform","_id":"a8224669-4794-47da-97c4-eecafdd89ae3","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":545.7984,"y":360.4049},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{"bambooTransform":{"_name":"bambooTransform","_id":"a8224669-4794-47da-97c4-eecafdd89ae3","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"bambooObject":{"_name":"bambooObject","_id":"983c71c2-7972-4318-9038-4fa0e0392b71","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"pandaNavMesh":{"_name":"pandaNavMesh","_id":"bc74083f-306a-43b5-be9e-f1fc4701e5da","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.AI.NavMeshAgent,
-    UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}}'
   _objectReferences: []
   _graphSource:
     _version: 3.31

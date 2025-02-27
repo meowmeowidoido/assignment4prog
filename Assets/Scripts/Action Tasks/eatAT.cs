@@ -14,30 +14,41 @@ namespace NodeCanvas.Tasks.Actions
         public BBParameter<GameObject> closestBamboo; // Store result in Blackboard
         public BBParameter<NavMeshAgent> agent;
         private Blackboard pandaBB; // Reference to the Blackboard
-
-        protected override string OnInit()
-        {  // Get the Blackboard from the agent
+        public BBParameter<GameObject> nonNomSignifier;
+        private float eatingTime;
+        protected override void OnExecute()
+ 
+        { /*/ Get the Blackboard from the agent
                 pandaBB = agent.value.GetComponent<Blackboard>();
 
                     // Retrieve "nearestBamboo" from Blackboard
                     closestBamboo = pandaBB.GetVariableValue<GameObject>("nearestBamboo");
-
-
-            return null;
+            */
+            eatingTime = 0;
+            return;
         }
 
-        protected override void OnExecute()
+        protected override void OnUpdate()
         {
-            if (closestBamboo == null || closestBamboo.value == null)
+            if (closestBamboo.value == null)
             {
                 Debug.LogWarning("No valid bamboo found in Blackboard! Cannot destroy.");
                 EndAction(false);
                 return;
             }
+            eatingTime += Time.deltaTime;
+            if (!nonNomSignifier.value.active)
+            {
+                nonNomSignifier.value.SetActive(true);
+            }
 
-            Debug.Log("Destroying bamboo: " + closestBamboo.value.name);
-            GameObject.Destroy(closestBamboo.value);
-            EndAction(true);
+           
+            if (eatingTime > 3)
+            {
+                GameObject.Destroy(closestBamboo.value);
+                nonNomSignifier.value.SetActive(false);
+                EndAction(true);
+            }
         }
     }
 }
