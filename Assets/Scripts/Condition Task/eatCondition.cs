@@ -1,5 +1,5 @@
 using NodeCanvas.Framework;
-using NodeCanvas.Tasks.Actions;
+using NodeCanvas.Tasks.Conditions;
 using ParadoxNotion.Design;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -64,7 +64,14 @@ namespace NodeCanvas.Tasks.Conditions
             if (distance < distanceWidth)
             {
                 agent.SetDestination(nearestBamboo.value.transform.position);
-                return true;
+                if (agent.remainingDistance < 3)
+                {
+                    Vector3 direction = (nearestBamboo.value.transform.position - agent.transform.position).normalized;
+                    Quaternion lookRotation = Quaternion.LookRotation(direction);
+                    agent.transform.rotation = Quaternion.Slerp(agent.transform.rotation, lookRotation, Time.deltaTime * 4);
+                    return true;
+                }
+               
             }
 
             return false;

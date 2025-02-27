@@ -12,18 +12,11 @@ namespace NodeCanvas.Tasks.Actions
     public class eatAT : ActionTask
     {
         public BBParameter<GameObject> closestBamboo; // Store result in Blackboard
-        public BBParameter<NavMeshAgent> agent;
-        private Blackboard pandaBB; // Reference to the Blackboard
         public BBParameter<GameObject> nonNomSignifier;
         private float eatingTime;
         protected override void OnExecute()
  
-        { /*/ Get the Blackboard from the agent
-                pandaBB = agent.value.GetComponent<Blackboard>();
-
-                    // Retrieve "nearestBamboo" from Blackboard
-                    closestBamboo = pandaBB.GetVariableValue<GameObject>("nearestBamboo");
-            */
+        {
             eatingTime = 0;
             return;
         }
