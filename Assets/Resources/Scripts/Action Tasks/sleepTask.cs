@@ -33,17 +33,17 @@ namespace NodeCanvas.Tasks.Actions {
         //Called once per frame while the action is active.
         protected override void OnUpdate()
         {
-		 agent.SetDestination(bed.transform.position);
-         float distance =  Vector3.Distance(agent.transform.position, bed.transform.position);
-            if (distance < 2)
+		 agent.SetDestination(bed.transform.position); //set the destination fo teh agent to the bed.
+         float distance =  Vector3.Distance(agent.transform.position, bed.transform.position); //checks the distance of the bed and the agent
+            if (distance < 2) //if the distance is less than 2
             {
-                if (energy.value < 100)
+                if (energy.value < 100) //is the energy less than 100?
                 {
-                    energy.value += 10f * Time.deltaTime;  // Increment at a fixed rate
+                    energy.value += 10f * Time.deltaTime;  // increments the energy value by 10 plus time.deltatime (similar to a timer)
                 }
                 else
                 {
-                    EndAction(true);  // Only end when energy reaches 100
+                    EndAction(true);  // when the energy is 100 or greater end the action.
                 }
             }
         }

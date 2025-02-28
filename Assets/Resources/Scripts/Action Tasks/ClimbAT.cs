@@ -10,15 +10,15 @@ namespace NodeCanvas.Tasks.Actions
     public class ClimbAT : ActionTask
     {
 
-        //Use for initialization. This is called only once in the lifetime of the task.
-        //Return null if init was successfull. Return an error string otherwise
 
+        //Variables
         public NavMeshAgent agent;
-        public float distanceWidth = 4;
-        Blackboard pandaBB;
         public BBParameter<float> pandaEnergy;
-        public BBParameter<GameObject> nearestBambooTop;
-        float distance;
+        public BBParameter<GameObject> nearestTreeTop;
+        public BBParameter<GameObject> origin;
+        float climbTimer;
+        float energyLoss;
+
         protected override string OnInit()
         {
             return null;
@@ -29,47 +29,49 @@ namespace NodeCanvas.Tasks.Actions
         //EndAction can be called from anywhere.
         protected override void OnExecute()
         {
-
+            energyLoss = 0;
         }
 
         //Called once per frame while the action is active.
         protected override void OnUpdate()
         {
+            Debug.Log(climbTimer);
 
-            // Find all bamboo objects
-            GameObject[] allBambooTop = GameObject.FindGameObjectsWithTag("BambooTop");
-
-
-            // Find the closest bamboo
-            nearestBambooTop.value = null;
-            float shortestDistance = Mathf.Infinity;
-            Vector3 agentPosition = agent.transform.position;
-
-            foreach (GameObject bambooTop in allBambooTop)
+            if (energyLoss <= 15)
             {
-                float distanceToBamboo = Vector3.Distance(agentPosition, bambooTop.transform.position);
-                if (distanceToBamboo < shortestDistance)
+                // Climbs up to ensure that the navmesh is actually on the top of the tree.
+                if (climbTimer < 3)
                 {
-                    shortestDistance = distanceToBamboo;
-                    nearestBambooTop.value = bambooTop;
+                    agent.SetDestination(nearestTreeTop.value.transform.position);
                 }
+               //climbs down by checking if the timer is greater than three and less than 6
+                else if (climbTimer >= 3 && climbTimer < 6)
+                {
+                    Vector3 climbDown = agent.transform.position + new Vector3(0, -0.5f, 0);
+                    agent.SetDestination(climbDown);
+                }
+                // if the climbTimer is greater than 6, it will reset to 6 and make the agent climb back up again.
+                else if (climbTimer >= 6)
+                {
+                    climbTimer = 0; // Reset timer after full cycle
+                    agent.SetDestination(nearestTreeTop.value.transform.position);
+                }
+
+                // energyLoss is incrementing and subtracts from the panda's energy value.
+                climbTimer += Time.deltaTime; //the climb timer is incremented.
+                pandaEnergy.value -= Time.deltaTime;
+                energyLoss += Time.deltaTime; // Keep increasing energy loss
             }
 
 
-            // Store the closest bamboo's distance
-            distance = shortestDistance;
 
-            if (distance < 0.5)
+            if (energyLoss >= 15 || pandaEnergy.value<30) //if the energy loss is greater than 15 or the panda's energy value is less than 30, the panda will climb off and end the state.
             {
-                agent.SetDestination(nearestBambooTop.value.transform.position);
-
-               
-            }
-            if(Input.GetMouseButton(0))
-            {
+                agent.SetDestination(origin.value.transform.position);
                 EndAction(true);
             }
-          
+
         }
+
     }
 }

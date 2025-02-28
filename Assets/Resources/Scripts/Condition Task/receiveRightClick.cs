@@ -26,13 +26,13 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(1)) //Checks when the right mouse button is clicked for dancing state.
             {
-                Debug.Log("CLICKED!");
+                Debug.Log("CLICKED!"); //returns clicked in debug.
 
-                return true;
+                return true; //returns true if click was established.
             }
-            return false;
+            return false; //returns false otherwise
 
            
 		}

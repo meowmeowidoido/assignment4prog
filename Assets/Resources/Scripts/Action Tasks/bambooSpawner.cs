@@ -8,7 +8,7 @@ namespace NodeCanvas.Tasks.Actions
     public class bambooSpawner : ActionTask
     {
 
-        public BBParameter<GameObject> bambooSpawn;
+        public BBParameter<GameObject> bambooSpawn;//gameobject spawner for bamboo
 
         protected override string OnInit()
         {
@@ -19,16 +19,16 @@ namespace NodeCanvas.Tasks.Actions
         {
           
             
-                GameObject prefab = Resources.Load<GameObject>("Prefabs/Bamboo");
+                GameObject prefab = Resources.Load<GameObject>("Prefabs/Bamboo"); //goes through Resources folder and finds prefabs titled bamboo.
 
        
-                Vector3 spawnerLocation = new Vector3(Random.Range(-1.70f, -20f), 5.5f, Random.Range(-3.80f, -20.65f));
-                bambooSpawn.value = GameObject.Instantiate(prefab, spawnerLocation, Quaternion.identity);
+                Vector3 spawnerLocation = new Vector3(Random.Range(-1.70f, -20f), 5.5f, Random.Range(-3.80f, -20.65f));//randomizes spawn location
+                bambooSpawn.value = GameObject.Instantiate(prefab, spawnerLocation, Quaternion.identity);//spawns bamboo 
                    
                 
 
 
-                EndAction(true);
+                EndAction(true);//Exits state
             }
         }
     }
